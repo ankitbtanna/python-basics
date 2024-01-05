@@ -22,6 +22,19 @@ print(name)
 # splitting string into characters - a.k.a. unpacking
 print([*name])
 
+# char at
+print(name[1])
+print(name[2])
+print(name[0])
+print(name[-1])
+
+print('#####################')
+# slicing
+print(name[1:3])
+print(name[:3])
+print(name[1:])
+
+
 # all return a new string, they do not alter existing string
 
 # isalpha() to check if a string contains only characters and is not empty
