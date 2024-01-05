@@ -5,6 +5,9 @@ name += 'Tanna'
 full_name = 'Ankit' + ' ' + 'Tanna'
 print(full_name)
 
+escape_chars = "An\"kit"
+print(escape_chars)
+
 age = 33
 age_string = str(age)
 
