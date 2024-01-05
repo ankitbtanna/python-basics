@@ -14,7 +14,13 @@ print(name.isascii())
 print(name.isdecimal())
 print(name.startswith('a'))
 print(name.endswith('t'))
-print(name.split(''))
+print(name.split())
+
+print('#####################')
+print(name)
+
+# splitting string into characters - a.k.a. unpacking
+print([*name])
 
 # all return a new string, they do not alter existing string
 
@@ -31,7 +37,7 @@ print(name.split(''))
 # upper() to get an uppercase version of a string
 # isupper() to check if a string is uppercase
 # title() to get a capitalized version of a string
-# startsswith() to check if the string starts with a specific substring
+# startswith() to check if the string starts with a specific substring
 # endswith() to check if the string ends with a specific substring
 # replace() to replace a part of a string
 # split() to split a string on a specific character separator
