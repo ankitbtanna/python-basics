@@ -23,3 +23,11 @@ else:
 
 print(type(done) == bool)
 
+book1 = True
+book2 = False
+
+read_any_book = any([book1, book2]);
+print(read_any_book)
+
+read_all_books = all([book1, book2]);
+print(read_all_books)
