@@ -14,3 +14,6 @@ print(State(1).name)
 
 print(State['ACTIVE'].value)
 print(State['INACTIVE'].value)
+
+print(list(State))
+print(len(State))
