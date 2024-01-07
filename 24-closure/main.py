@@ -9,9 +9,9 @@ def counter():
     return increment
 
 
-increment = counter();
+increment = counter()
 
-print(increment());
-print(increment());
-print(increment());
+print(increment())
+print(increment())
+print(increment())
 
