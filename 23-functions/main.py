@@ -1,4 +1,4 @@
-# Functions
+# Functions - defining and declaring before is important
 
 def hello():
     print("Hello")
@@ -31,5 +31,21 @@ details = {
 
 hello_person_details(details)
 
-print(details);
+print(details)
 
+def function_returning_multiple_values():
+    return 1, 2, 3
+
+print(function_returning_multiple_values())
+print(list(function_returning_multiple_values()))
+
+
+def talk(phrase):
+    def say(word):
+        print(word)
+
+    words = phrase.split(' ')
+    for word in words:
+        say(word)
+
+talk("Hello World")
