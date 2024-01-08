@@ -2,14 +2,14 @@
 
 condition = True
 
-couner = 0;
+counter = 0;
 
 # while loop
 while condition == True:
-    couner += 1
+    counter += 1
     print("Hello World!")
 
-    if couner > 10:
+    if counter > 10:
         condition = False
 
 
