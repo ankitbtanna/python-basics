@@ -19,8 +19,11 @@ parser.add_argument(
     '-b', '--breed', required=True, type=str, help="The dog's breed"
 )
 parser.add_argument(
+    '-t', '--toy', required=True, type=str, choices={"bone", "ball"}, help="The dog's toy"
+)
+parser.add_argument(
     '-v', '--vaccinated', required=True, type=str_to_bool, help="Is the dog vaccinated?"
 )
 
 args = parser.parse_args()
-print(args.name, args.breed, args.vaccinated)
+print(args.name, args.breed, args.vaccinated, args.toy)
