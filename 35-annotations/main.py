@@ -10,8 +10,16 @@ def increment(number: int) -> int:
     """
     return number + 1
 
+
 print(increment(1))
 
-print(help(increment))
+help(increment)
 
-increment("abc")
+# increment("abc")
+
+
+# def add_numbers(a: None, b: int) -> int:
+#     """ This function adds two """
+#
+#     return a + b
+
