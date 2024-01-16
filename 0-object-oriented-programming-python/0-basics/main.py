@@ -1,4 +1,6 @@
 class Item:
+    pay_rate = 0.8
+
     def __init__(self, name: str, price: float, quantity: int = 0):
         # run validations
         assert price >= 0, f"Price {price} is not greater than or equal to zero!"
@@ -45,6 +47,8 @@ print(item3.calculate_total_price())
 
 item3 = Item("Watch", 500, 3)
 
+print(f"This is a Class Attribute {Item.pay_rate}")
+
 # Methods starting and ending with __METHODNAME__ are called magic methods
 
 # # store management system - Tracking items in our store
@@ -61,3 +65,7 @@ item3 = Item("Watch", 500, 3)
 #
 # # Class - data type of our own, attributes and methods
 #
+
+# instance attributes are specific to the instances
+# Class attributes are common for all the instances - static?
+
