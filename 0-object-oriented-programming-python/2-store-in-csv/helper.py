@@ -21,3 +21,4 @@ class Item:
 
 # Static methods don't pass the object reference as the first argument
 # Class methods pass class reference as the first argument
+# Never call static or class method from instantiated object. Always call them from Class.
