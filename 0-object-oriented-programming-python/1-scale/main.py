@@ -28,7 +28,8 @@ class Item:
         self.price = self.price * self.pay_rate
 
     def __repr__(self):
-        return vars(self)
+        # return f"Item('{self.name}', {self.price}, {self.quantity})"
+        return str(vars(self))
 
 
 item1 = Item("Phone", 100, 1)
@@ -38,7 +39,7 @@ item4 = Item("Mouse", 50, 5)
 item5 = Item("Keyboard", 75, 5)
 
 
-print(len(Item.all))
+print(Item.all)
 
 for item in Item.all:
     print(vars(item))
