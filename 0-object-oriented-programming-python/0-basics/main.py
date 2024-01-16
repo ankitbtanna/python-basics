@@ -88,4 +88,3 @@ print(item2.price)
 
 # instance attributes are specific to the instances
 # Class attributes are common for all the instances - static?
-
