@@ -17,6 +17,9 @@ class Item:
     def calculate_total_price(self):
         return self.quantity * self.price
 
+    def apply_discount(self):
+        self.price = self.price * self.pay_rate
+
 
 item1 = Item("Phone", 100, 5)
 
@@ -57,6 +60,14 @@ print(f"This is a Instance Attribute for item2 {item2.pay_rate}")
 # Dictionary - to see all the attributes of the object:
 print(f"All the attributes for Class {Item.__dict__}")
 print(f"All the attributes for instance {item1.__dict__}")
+
+item1.apply_discount()
+print(item1.price)
+
+item2 = Item("Laptop", 1000, 5)
+item2.pay_rate = 0.7
+item2.apply_discount()
+print(item2.price)
 
 # Methods starting and ending with __METHODNAME__ are called magic methods
 
