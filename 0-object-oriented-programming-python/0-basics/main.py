@@ -1,7 +1,7 @@
 class Item:
     pay_rate = 0.8
 
-    def __init__(self, name: str, price: float, pay_rate, quantity: int = 0):
+    def __init__(self, name: str, price: float, quantity: int = 0):
         # run validations
         assert price >= 0, f"Price {price} is not greater than or equal to zero!"
         assert quantity >= 0, f"Quantity {quantity} is not greater than or equal to zero!"
@@ -11,7 +11,6 @@ class Item:
         self.name = name
         self.price = price
         self.quantity = quantity
-        self.pay_rate = pay_rate
 
         self.total_price = self.price * self.quantity
 
@@ -19,7 +18,7 @@ class Item:
         return self.quantity * self.price
 
 
-item1 = Item("Phone", 100, None, 5)
+item1 = Item("Phone", 100, 5)
 
 print(item1)
 print(item1.name)
@@ -29,7 +28,7 @@ print(item1.calculate_total_price())
 
 print("########")
 
-item2 = Item("Laptop", 1000, 3, 3)
+item2 = Item("Laptop", 1000, 3)
 
 print(item1)
 print(item1.name)
@@ -48,9 +47,16 @@ print(item3.calculate_total_price())
 
 item3 = Item("Watch", 500, 3)
 
-print(f"This is a Class Attribute {Item.pay_rate}")
-print(f"This is a Instance Attribute {item1.pay_rate}")
-print(f"This is a Instance Attribute {item2.pay_rate}")
+item2.pay_rate = 10
+
+# Class attribute vs Instance attribute
+print(f"This is a Class Attribute for class {Item.pay_rate}")
+print(f"This is a Instance Attribute for item1 {item1.pay_rate}")
+print(f"This is a Instance Attribute for item2 {item2.pay_rate}")
+
+# Dictionary - to see all the attributes of the object:
+print(f"All the attributes for Class {Item.__dict__}")
+print(f"All the attributes for instance {item1.__dict__}")
 
 # Methods starting and ending with __METHODNAME__ are called magic methods
 
