@@ -1,7 +1,7 @@
 import sys
 import argparse
 
-print(sys.argv) #  python3 main.py beau 25
+print(sys.argv) #  python3 item.py beau 25
 name = sys.argv[1]
 print(name)
 
